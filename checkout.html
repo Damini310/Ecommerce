@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Checkout - StyleMart</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">StyleMart</div>
+    <div class="nav-inner">
+      <button class="nav-toggle">☰</button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="shoes.html">Shoes</a></li>
+          <li><a href="cart.html">Cart 🛒 <span class="cart-count" style="display:none;margin-left:6px;background:#DB2777;padding:2px 7px;border-radius:12px;font-size:12px;"></span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="checkout-page reveal">
+      <h2 class="center">Checkout 🛍️</h2>
+
+      <div style="display:grid;grid-template-columns:1fr 360px;gap:18px;max-width:1100px;margin:18px auto;">
+        <form class="checkout-form" style="background:white;padding:18px;border-radius:10px;" autocomplete="on">
+          <input name="name" type="text" placeholder="Full name" required />
+          <input name="email" type="email" placeholder="Email address" required />
+          <input name="phone" type="tel" placeholder="Phone number" />
+          <input name="address" type="text" placeholder="Shipping address" required />
+          <label style="font-weight:700;margin-top:6px;">Payment method</label>
+          <div style="display:flex;gap:8px;">
+            <label><input type="radio" name="payment" value="card" checked/> Card</label>
+            <label><input type="radio" name="payment" value="paystack" /> Paystack</label>
+            <label><input type="radio" name="payment" value="flutterwave" /> Flutterwave</label>
+          </div>
+          <button class="btn" type="submit" style="margin-top:12px;">Complete Purchase</button>
+        </form>
+
+        <aside style="background:white;padding:18px;border-radius:10px;">
+          <h3>Order Summary</h3>
+          <div class="checkout-summary" style="margin-top:12px;"></div>
+          <div style="margin-top:10px;"><strong>Total: <span class="checkout-total">$0.00</span></strong></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 StyleMart. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

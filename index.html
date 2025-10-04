@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>StyleMart - Trendy Fashion</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">StyleMart</div>
+    <div class="nav-inner">
+      <button class="nav-toggle">☰</button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="shoes.html">Shoes</a></li>
+          <li><a href="cart.html">Cart 🛒 <span class="cart-count" style="display:none;margin-left:6px;background:#DB2777;padding:2px 7px;border-radius:12px;font-size:12px;"></span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero page-fade reveal" aria-hidden="false">
+      <div class="hero-inner container">
+        <h1 class="reveal">Stay Fresh. Stay Stylish.</h1>
+        <p class="reveal">Your go-to spot for youthful fashion & shoes — curated for trendsetters.</p>
+        <a href="#products" class="btn reveal">Browse Collection</a>
+      </div>
+    </section>
+
+    <section id="products" class="products reveal">
+      <div class="container">
+        <h2>Hot Picks 🔥</h2>
+        <div class="product-grid">
+          <article class="product">
+            <img src="./IMG/Oversized Tee.jpg" alt="Oversized Tee">
+            <h3>Oversized Tee</h3>
+            <p class="price">$25</p>
+            <div class="actions">
+              <button class="add-btn">Add to Cart</button>
+              <a class="btn-ghost" href="men.html">View</a>
+            </div>
+          </article>
+
+          <article class="product">
+            <img src="./IMG/Chunky Sneakers.jpg" alt="Chunky Sneakers">
+            <h3>Chunky Sneakers</h3>
+            <p class="price">$55</p>
+            <div class="actions">
+              <button class="add-btn">Add to Cart</button>
+              <a class="btn-ghost" href="shoes.html">View</a>
+            </div>
+          </article>
+
+          <article class="product">
+            <img src="./IMG/women first.jpg" alt="Crop Top">
+            <h3>Crop Top</h3>
+            <p class="price">$20</p>
+            <div class="actions">
+              <button class="add-btn">Add to Cart</button>
+              <a class="btn-ghost" href="women.html">View</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 StyleMart. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

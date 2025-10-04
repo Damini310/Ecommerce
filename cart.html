@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shopping Cart - StyleMart</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">StyleMart</div>
+    <div class="nav-inner">
+      <button class="nav-toggle">☰</button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="shoes.html">Shoes</a></li>
+          <li><a href="cart.html">Cart 🛒 <span class="cart-count" style="display:none;margin-left:6px;background:#DB2777;padding:2px 7px;border-radius:12px;font-size:12px;"></span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="cart-page reveal">
+      <h2 class="center">Your Cart 🛒</h2>
+      <div class="cart-items">
+        <!-- Rendered by script.js -->
+      </div>
+
+      <div class="cart-summary">
+        <h3>Total: $0.00</h3>
+        <a href="checkout.html" class="btn checkout-btn">Proceed to Checkout</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 StyleMart. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
